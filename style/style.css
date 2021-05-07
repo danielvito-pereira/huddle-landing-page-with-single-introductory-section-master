@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*  {
+    overflow:hidden;
+    box-sizing: border;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.man-wapper {
+    display: flex;
+    width: 100vw;
+    min-height:100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+    display: block;
+    position: absolute;
+    width: 12%;
+    top: 3%;
+    left: 9%;
+}
+.logo >img{
+    width: 100%;
+}
+.ilustration{
+    position: absolute;
+    width: 38%;
+    padding: 2em;
+    top: 21%;
+    left: 9%;
+}
+.ilustration>img{
+    width: 100%;
+}
+.conteudo {
+    position: absolute;
+    width: 40%;
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+    top: 23%;
+    left: 52%;
+}
+button{
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    width: 29%;
+    height: auto;
+    padding: 1em;
+    border-radius: 10em;
+}
+h1{
+
+}
+.text{
+    font-size: 74%;
+}
+button:hover{
+    color: white;
+    background-color:  hsl(300, 69%, 71%);
+    transition: 1s;
+    cursor: pointer;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
+@media (max-width: 800px){
+    *  {
+        overflow: visible;
+        box-sizing: border-box;
+    }
+    html, body {
+        background-image: url(../images/bg-mobile.svg);
+    }
+    .man-wapper {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo{
+        display: block;
+        position: absolute;
+        width: 38%;
+        left: 7%;  
+        top: 6%;
+    }
+    .logo >img{
+        width: 100%;
+    }
+    .ilustration{
+        position: absolute;
+        width: 96%;
+        left: auto;  
+        top: 14%;
+    }
+
+    .conteudo {
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        top: 49%;
+        left: auto;
+        margin: 2%;
+    }
+    .text{
+        font-size: 1px;
+    }
+    h1{
+        font-size: 74%;
+    }
+    button{
+        color: hsl(257, 40%, 49%);
+        background-color: white;
+        width: 69%;
+        height: auto;
+    
+    }
+    footer {
+        display: none;
+    }
+
+}
+@media (max-width: 1400px){
+    .text{
+        font-size: 64%;
+    }
+    h1{
+        font-size: 84%;
+    }
+}
