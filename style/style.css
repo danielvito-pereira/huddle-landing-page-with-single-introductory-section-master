@@ -79,6 +79,7 @@ footer {
     position:absolute;
     bottom:0;
     width:100%;
+    color: white;
 }
 
 
@@ -97,24 +98,25 @@ footer {
     }
 
     .logo{
-        display: block;
-        position: absolute;
-        width: 38%;
-        left: 7%;  
-        top: 6%;
+        
+        position: relative;
+        padding: 1em;
+        width: 50%;
+        left: auto;
+        height: 100%;
     }
     .logo >img{
         width: 100%;
     }
     .ilustration{
-        position: absolute;
+        position: relative;
         width: 96%;
-        left: auto;  
-        top: 14%;
+        left: auto; 
+        text-align: right; 
     }
 
     .conteudo {
-        position: absolute;
+        position: relative;
         width: 80%;
         text-align: center;
         color: white;
@@ -138,6 +140,7 @@ footer {
     }
     footer {
         display: none;
+        
     }
 
 }
